@@ -1,0 +1,172 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 31, 54);
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.split-left {
+    left: 0;
+    background: rgb(12, 31, 54);
+    width: 50%;
+}
+
+.left-container {
+    width: 50%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 5;
+}
+
+label {
+    color: rgb(194, 199, 205);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box .input-field {
+    width: 90%;
+    height: 40px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid rgb(120, 144, 156);
+    border-radius: 2px;
+    background-color: rgb(28, 55, 86);
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(20, 184, 255);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(16, 148, 204);
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.forgot a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot a:hover {
+    color: rgb(16, 148, 204);
+}
+
+.split-right {
+    right: 0;
+    background-image: url(https://portal.starlink.fbase.co.uk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fauth-banner.714d1444.webp&w=1920&q=75);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .split {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img {
+        left: 0px;
+    }
+
+    .split-right {
+        background-color: rgb(12, 31, 54);
+        background-image: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .split-left {
+        width: 100%;
+    }
+
+    .left-container {
+        margin: 10%;
+        width: auto;
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        height: 45px;
+        font-size: 16px;
+    }
+}
